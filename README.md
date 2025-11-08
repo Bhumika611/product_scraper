@@ -8,8 +8,7 @@ This repository contains a simple and readable script (no external API keys or c
 ### PowerShell one-liner — create `README.md` automatically
 Open PowerShell in your `product_scraper` folder and paste this (it writes the file exactly as above):
 
-```powershell
-$readme = @'
+
 # 🛒 Books-to-Scrape Product Scraper
 
 A small, internship-friendly Python scraper that extracts product details (book name, price, and rating) from the demo website **Books to Scrape** and saves the results to a CSV file.
