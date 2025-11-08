@@ -5,17 +5,6 @@ A small, internship-friendly Python scraper that extracts product details (book 
 This repository contains a simple and readable script (no external API keys or complex setup) — perfect for demonstrations, learning web scraping basics, and adding to your GitHub portfolio.
 
 
-### PowerShell one-liner — create `README.md` automatically
-Open PowerShell in your `product_scraper` folder and paste this (it writes the file exactly as above):
-
-
-# 🛒 Books-to-Scrape Product Scraper
-
-A small, internship-friendly Python scraper that extracts product details (book name, price, and rating) from the demo website **Books to Scrape** and saves the results to a CSV file.
-
-This repository contains a simple and readable script (no external API keys or complex setup) — perfect for demonstrations, learning web scraping basics, and adding to your GitHub portfolio.
-
-
 ## 🔧 Requirements
 - Python 3.x
 - Libraries:
@@ -24,11 +13,11 @@ This repository contains a simple and readable script (no external API keys or c
 
 ⚙️ How to run
 
-1. Open terminal / PowerShell and navigate to the project folder:
+1. **Open terminal / PowerShell and navigate to the project folder:**
 
 cd C:\Users\bhumi\OneDrive\bhumi\product_scraper
 
-2. Run the script:
+2. **Run the script:**
 
 py product_scraper.py
 
