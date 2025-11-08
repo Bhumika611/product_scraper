@@ -4,64 +4,69 @@ A small, internship-friendly Python scraper that extracts product details (book 
 
 This repository contains a simple and readable script (no external API keys or complex setup) — perfect for demonstrations, learning web scraping basics, and adding to your GitHub portfolio.
 
+---
 
 ## 🔧 Requirements
 - Python 3.x
 - Libraries:
   ```bash
   py -m pip install requests beautifulsoup4
+  ```
 
-⚙️ How to run
+---
+
+## ⚙️ How to run
 
 1. **Open terminal / PowerShell and navigate to the project folder:**
-
-```bash
-cd C:\Users\bhumi\OneDrive\bhumi\product_scraper
+   ```bash
+   cd C:\Users\bhumi\OneDrive\bhumi\product_scraper
+   ```
 
 2. **Run the script:**
+   ```bash
+   py product_scraper.py
+   ```
 
-```bash
-py product_scraper.py
+The script prints progress messages and creates **products.csv** in the same folder.
 
+---
 
-The script prints progress messages and creates products.csv in the same folder.
+## 🧾 Example output (products.csv)
 
-🧾 Example output (products.csv)
-Name	Price	Rating
-A Light in the Attic	£51.77	Three
-Tipping the Velvet	£53.74	One
-Soumission	£50.10	One
+| Name | Price | Rating |
+|------|--------|--------|
+| A Light in the Attic | £51.77 | Three |
+| Tipping the Velvet | £53.74 | One |
+| Soumission | £50.10 | One |
 
-(Actual values depend on the site content at run time.)
+*(Actual values depend on the site content at run time.)*
 
-📝 Notes & tips
+---
 
-This demo site (books.toscrape.com) is intended for learning and practice — it does not block scrapers, so it’s perfect for internship demos.
+## 📝 Notes & tips
+
+This demo site (**books.toscrape.com**) is intended for learning and practice — it does not block scrapers, so it’s perfect for internship demos.
 
 If you want to expand the scraper:
+- Add pagination to scrape multiple pages.
+- Save additional fields (availability, product page URL).
+- Store results in JSON or a SQLite database.
+- Add logging and better error handling.
+- Respect robots.txt and site terms for real-world sites; avoid scraping protected/commercial websites without permission.
 
-Add pagination to scrape multiple pages.
+---
 
-Save additional fields (availability, product page URL).
+## 🚀 Improvements you can add (good internship talking points)
 
-Store results in JSON or a SQLite database.
+- Add a CLI flag to specify page number or number of pages to scrape.
+- Add retry logic and exponential backoff for network errors.
+- Normalize prices (convert £ to numbers) and map textual ratings (Three → 3).
+- Create a small unit test for the `extract_books` function using saved HTML samples.
 
-Add logging and better error handling.
+---
 
-Respect robots.txt and site terms for real-world sites; avoid scraping protected/commercial websites without permission.
+## 👩‍💻 Author
 
-🚀 Improvements you can add (good internship talking points)
+**Bhumika Macharla** — Internship project  
+🔗 GitHub: [Bhumika611](https://github.com/Bhumika611)
 
-Add a CLI flag to specify page number or number of pages to scrape.
-
-Add retry logic and exponential backoff for network errors.
-
-Normalize prices (convert £ to numbers) and map textual ratings (Three) to numeric (3).
-
-Create a small unit test for the extract_books function using saved HTML samples.
-
-
-👩‍💻 Author
-
-Bhumika Macharla — Internship project
-GitHub: Bhumika611
