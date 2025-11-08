@@ -15,11 +15,13 @@ This repository contains a simple and readable script (no external API keys or c
 
 1. **Open terminal / PowerShell and navigate to the project folder:**
 
-```cd C:\Users\bhumi\OneDrive\bhumi\product_scraper
+```bash
+cd C:\Users\bhumi\OneDrive\bhumi\product_scraper
 
 2. **Run the script:**
 
-```py product_scraper.py
+```bash
+py product_scraper.py
 
 
 The script prints progress messages and creates products.csv in the same folder.
